@@ -1,0 +1,29 @@
+-- Conectar-se ao serviço de jogador local
+local player = game.Players.LocalPlayer
+
+-- Conectar-se ao evento de perda de vida
+player.Character.Humanoid.HealthChanged:Connect(function(health)
+    -- Verificar se a vida está abaixo de 100%
+    if health < player.Character.Humanoid.MaxHealth then
+        -- Conectar-se ao serviço ReplicatedStorage e enviar um sinal para curar o jogador
+        game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Attacks"):WaitForChild("Heal"):FireServer()
+
+game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Attacks"):WaitForChild("Heal"):FireServer()
+
+game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Attacks"):WaitForChild("Heal"):FireServer()
+
+game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Attacks"):WaitForChild("Heal"):FireServer()
+
+game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Attacks"):WaitForChild("Heal"):FireServer()
+
+game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Attacks"):WaitForChild("Heal"):FireServer()
+
+game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Attacks"):WaitForChild("Heal"):FireServer()
+
+game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Attacks"):WaitForChild("Heal"):FireServer()
+
+game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Attacks"):WaitForChild("Heal"):FireServer()
+
+game:GetService("ReplicatedStorage"):WaitForChild("Main"):WaitForChild("Attacks"):WaitForChild("Heal"):FireServer()
+    end
+end)
